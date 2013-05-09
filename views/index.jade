@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    .container
+        h1= title
+        p Welcome to #{title}
+        .row
+            .span5
+                form.form-horizontal
+                    .control-group
+                        label.control-label Latitude
+                        .controls
+                            input(type="text", id="lat", value="45.52478")
+                    .control-group
+                        label.control-label Longitude
+                        .controls            
+                            input(type="text", id="lon", value="10.22727")
+                    .control-group
+                        label.control-label Distance
+                        .controls
+                            input(type="text", id="km", value="100")
+                    .control-group
+                        .controls
+                            button(id="go", class="btn btn-primary") Search
+            .span6
+                fieldset
+                    ul#items
+            
